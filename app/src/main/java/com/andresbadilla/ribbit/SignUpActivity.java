@@ -40,6 +40,8 @@ public class SignUpActivity extends Activity {
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.activity_sign_up);
 
+        getActionBar().hide();
+
         ButterKnife.bind(this);
 
         mSignUpButton.setOnClickListener(new View.OnClickListener() {
