@@ -29,7 +29,7 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_ribbit</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_ribbit</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ribbit</item>
-        <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+
     </style>
 
     <style name="ActionBar.Solid.Ribbit" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
@@ -77,6 +77,10 @@
     </style>
 
     <!-- Own resources, not auto generated -->
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+    </style>
 
     <style name="AuthBackground">
         <item name="android:background">@drawable/background_fill</item>
