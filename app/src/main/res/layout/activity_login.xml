@@ -23,41 +23,26 @@
         style="@style/AuthFieldContainer">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/usernameField"
             android:hint="@string/username_hint"
-            android:textColorHint="@color/light_grey"
-            android:textSize="17sp"/>
+            style="@style/AuthEditText">
+
+            <requestFocus/>
+        </EditText>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
             android:id="@+id/passwordField"
-            android:hint="@string/password_hint"
-            android:textColorHint="@color/light_grey"
-            android:textSize="17sp"/>
+            style="@style/AuthEditText"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint" />
 
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_custom"
-        android:text="@string/login_button_label"
         android:id="@+id/loginButton"
+        android:text="@string/login_button_label"
         android:layout_below="@+id/editTextLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:textSize="13sp"
-        android:textColor="@color/text_color"  />
+        style="@style/AuthButton" />
 
     <TextView
         android:layout_width="wrap_content"
