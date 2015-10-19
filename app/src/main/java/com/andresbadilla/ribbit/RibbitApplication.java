@@ -4,10 +4,6 @@ import android.app.Application;
 
 import com.parse.Parse;
 
-
-/**
- * Created by Andres Badilla on 9/23/2015.
- */
 public class RibbitApplication extends Application {
 
     @Override

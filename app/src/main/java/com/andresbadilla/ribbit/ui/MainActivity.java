@@ -1,4 +1,4 @@
-package com.andresbadilla.ribbit;
+package com.andresbadilla.ribbit.ui;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -16,6 +16,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
+
+import com.andresbadilla.ribbit.utils.ParseConstants;
+import com.andresbadilla.ribbit.R;
+import com.andresbadilla.ribbit.adapters.SectionsPagerAdapter;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 import java.io.File;
@@ -240,7 +244,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
             recipientsIntent.setData(mMediaUri);
 
             String fileType;
-            if(requestCode== PICK_PHOTO_REQUEST || requestCode==TAKE_PHOTO_REQUEST) fileType=ParseConstants.TYPE_IMAGE;
+            if(requestCode== PICK_PHOTO_REQUEST || requestCode==TAKE_PHOTO_REQUEST) fileType= ParseConstants.TYPE_IMAGE;
             else fileType = ParseConstants.TYPE_VIDEO;
 
             recipientsIntent.putExtra(ParseConstants.KEY_FILE_TYPE, fileType);

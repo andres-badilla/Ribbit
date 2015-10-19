@@ -1,4 +1,4 @@
-package com.andresbadilla.ribbit;
+package com.andresbadilla.ribbit.ui;
 
 import android.app.Activity;
 import android.app.AlertDialog;

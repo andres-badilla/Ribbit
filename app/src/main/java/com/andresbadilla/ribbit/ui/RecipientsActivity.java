@@ -1,4 +1,4 @@
-package com.andresbadilla.ribbit;
+package com.andresbadilla.ribbit.ui;
 
 
 import android.app.AlertDialog;
@@ -12,9 +12,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.andresbadilla.ribbit.utils.FileHelper;
+import com.andresbadilla.ribbit.utils.ParseConstants;
 import com.andresbadilla.ribbit.R;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -144,7 +145,7 @@ public class RecipientsActivity extends ListActivity {
         message.put(ParseConstants.KEY_RECIPIENT_IDS, getRecipientIds());
         message.put(ParseConstants.KEY_FILE_TYPE, mFileType);
 
-        byte[] fileBytes = FileHelper.getByteArrayFromFile(this,mMediaUri);
+        byte[] fileBytes = FileHelper.getByteArrayFromFile(this, mMediaUri);
 
         if(fileBytes==null){
             return null;

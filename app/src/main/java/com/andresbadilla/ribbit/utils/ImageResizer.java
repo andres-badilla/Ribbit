@@ -1,4 +1,4 @@
-package com.andresbadilla.ribbit;
+package com.andresbadilla.ribbit.utils;
 
 import java.io.ByteArrayOutputStream;
 

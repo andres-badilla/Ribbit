@@ -1,8 +1,5 @@
-package com.andresbadilla.ribbit;
+package com.andresbadilla.ribbit.utils;
 
-/**
- * Created by Andres Badilla on 9/23/2015.
- */
 public final class ParseConstants {
     //Class names
     public static final String CLASS_MESSAGES = "Messages";

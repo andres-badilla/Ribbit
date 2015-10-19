@@ -1,4 +1,4 @@
-package com.andresbadilla.ribbit;
+package com.andresbadilla.ribbit.adapters;
 
 /**
  * Created by Andres Badilla on 9/23/2015.
@@ -8,6 +8,10 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.support.v13.app.FragmentPagerAdapter;
+
+import com.andresbadilla.ribbit.R;
+import com.andresbadilla.ribbit.ui.FriendsFragment;
+import com.andresbadilla.ribbit.ui.InboxFragment;
 
 import java.util.Locale;
 
@@ -34,7 +38,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return InboxFragment.newInstance(position + 1);
 
             case 1:
-                return FriendsFragment.newInstance(position+1);
+                return FriendsFragment.newInstance(position + 1);
         }
 
         return null;
