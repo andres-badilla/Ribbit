@@ -10,6 +10,7 @@ android {
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
+
     }
     buildTypes {
         release {
@@ -20,12 +21,14 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile 'com.android.support:support-v13:19.+'
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.parse.bolts:bolts-android:1.+'
-    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+    //compile fileTree(dir: 'libs', include: 'Parse-*.jar')
     compile fileTree(dir: 'libs', include: 'commons-io-2.4.jar')
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.parse.bolts:bolts-android:1.+'
+
+    compile 'com.parse:parse-android:1.+'
 }
